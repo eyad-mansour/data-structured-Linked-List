@@ -35,7 +35,7 @@ describe("append to the end of the linked list", () => {
     expect(ll.head.value).toEqual("first");
     expect(ll.head.next).toBeNull();
   });
-  it("appent to non-empty linked list", () => {
+  it("append to non-empty linked list", () => {
     const ll = new LinkedList();
     ll.append("first");
     ll.append("second");
@@ -44,5 +44,13 @@ describe("append to the end of the linked list", () => {
     expect(ll.head.next.value).toEqual("second");
     expect(ll.head.next.next.value).toEqual("third");
     expect(ll.head.next.next.next).toBeNull();
+  });
+});
+
+describe("insert to sepecific location in the linked list", () => {
+  it("insert to sepecific location in the linked list", () => {
+    const ll = new LinkedList();
+    ll.insert("random");
+    expect(ll.head.next).toEqual("random");
   });
 });
