@@ -47,14 +47,10 @@ describe("append to the end of the linked list", () => {
   });
 });
 
-// describe("insert to sepecific location in the linked list", () => {
-//   it("insert to sepecific location in the linked list", () => {
-//     const ll = new LinkedList();
-//     ll.insert("random");
-//     expect(ll.head.next).toEqual("random");
-//   });
-// });
-
-describe("delete the middiel in the linked list", () => {
-  it("delet test", () => {});
+describe("add node by specific location ", () => {
+  it("add node", () => {
+    const ll = new LinkedList();
+    ll.insertInPosition(1, 1);
+    expect(ll.head).toBeNull();
+  });
 });
